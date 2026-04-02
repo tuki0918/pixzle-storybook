@@ -10,7 +10,7 @@ const meta: Meta<typeof PixzleImage> = {
   tags: ["autodocs"],
   argTypes: {
     blockSize: { control: "number" },
-    seed: { control: "number" },
+    seed: { control: "text" },
     imageInfo: { control: "object" },
     image: { control: "text" },
     manifest: { control: "text" },
@@ -28,7 +28,7 @@ type Story = StoryObj<typeof PixzleImage>;
 export const Image1: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 500,
       h: 500,
@@ -40,7 +40,7 @@ export const Image1: Story = {
 export const Image1__MismatchSeed: Story = {
   args: {
     blockSize: 8,
-    seed: 11111,
+    seed: "11111",
     imageInfo: {
       w: 500,
       h: 500,
@@ -53,7 +53,7 @@ export const Image1__MismatchSeed: Story = {
 export const Image2: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 400,
       h: 600,
@@ -65,7 +65,7 @@ export const Image2: Story = {
 export const Image2__MismatchSeed: Story = {
   args: {
     blockSize: 8,
-    seed: 11111,
+    seed: "11111",
     imageInfo: {
       w: 400,
       h: 600,
@@ -78,7 +78,7 @@ export const Image2__MismatchSeed: Story = {
 export const Image3: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 600,
       h: 400,
@@ -90,7 +90,7 @@ export const Image3: Story = {
 export const Image3__MismatchSeed: Story = {
   args: {
     blockSize: 8,
-    seed: 11111,
+    seed: "11111",
     imageInfo: {
       w: 600,
       h: 400,
@@ -103,7 +103,7 @@ export const Image3__MismatchSeed: Story = {
 export const Error: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 500,
       h: 500,
@@ -159,7 +159,7 @@ export const WithManifestData: Story = {
       config: {
         blockSize: 8,
         prefix: "img",
-        seed: 12345,
+        seed: "12345",
         preserveName: false,
         crossImageShuffle: false,
       },
@@ -181,7 +181,7 @@ export const WithManifestData: Story = {
 export const ProtectedEnabled: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 500,
       h: 500,
@@ -195,7 +195,7 @@ export const ProtectedEnabled: Story = {
 export const ProtectedDisabled: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 500,
       h: 500,
@@ -213,7 +213,7 @@ export const ProtectedDisabled: Story = {
 export const CustomFallback: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 500,
       h: 500,
@@ -231,7 +231,7 @@ export const CustomFallback: Story = {
 export const ErrorFallbackAsFunction: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 500,
       h: 500,
@@ -254,7 +254,7 @@ export const ErrorFallbackAsFunction: Story = {
 export const WithAltText: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 500,
       h: 500,
@@ -268,7 +268,7 @@ export const WithAltText: Story = {
 export const WithCustomStyle: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 500,
       h: 500,
@@ -285,7 +285,7 @@ export const WithCustomStyle: Story = {
 export const WithClassName: Story = {
   args: {
     blockSize: 8,
-    seed: 12345,
+    seed: "12345",
     imageInfo: {
       w: 500,
       h: 500,

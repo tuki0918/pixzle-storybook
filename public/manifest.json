@@ -5,7 +5,7 @@
   "config": {
     "blockSize": 8,
     "prefix": "img",
-    "seed": 12345,
+    "seed": "12345",
     "preserveName": false,
     "crossImageShuffle": false
   },
