@@ -1,7 +1,7 @@
 {
-  "id": "0956fbe9-be0c-49a1-90ea-7e8493ccca94",
-  "version": "0.2.0",
-  "timestamp": "2026-04-02T15:02:13.926Z",
+  "id": "e65f7be7-6325-4dd8-add2-55c5a11f7840",
+  "version": "0.3.0",
+  "timestamp": "2026-05-25T12:01:51.857Z",
   "config": {
     "blockSize": 8,
     "prefix": "img",
